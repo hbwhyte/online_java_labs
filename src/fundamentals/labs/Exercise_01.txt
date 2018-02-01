@@ -3,20 +3,71 @@ Fundamentals Exercise 1: CLI
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
      2. Create new folder Terminal_testing
+     hbwhyte CodingNomads $ mkdir Terminal_testing
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+                hbwhyte CodingNomads $ cd Terminal_testing
+                hbwhyte Terminal_testing $ touch test1.txt
+                hbwhyte Terminal_testing $ ls -al
+                total 0
+                drwxr-xr-x  3 hbwhyte  staff   96 31 Jan 20:22 .
+                drwxr-xr-x  4 hbwhyte  staff  128 31 Jan 20:21 ..
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test1.txt
+                hbwhyte Terminal_testing $ touch test2.txt
+                hbwhyte Terminal_testing $ touch test3.txt
+                hbwhyte Terminal_testing $ ls -al
+                total 0
+                drwxr-xr-x  5 hbwhyte  staff  160 31 Jan 20:22 .
+                drwxr-xr-x  4 hbwhyte  staff  128 31 Jan 20:21 ..
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test1.txt
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test2.txt
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test3.txt
          b. print the directory path
+                hbwhyte Terminal_testing $ pwd
+                /Users/hbwhyte/CodingNomads/Terminal_testing
          c. list the contents of the folder
+                hbwhyte Terminal_testing $ ls -al
+                total 0
+                drwxr-xr-x  5 hbwhyte  staff  160 31 Jan 20:22 .
+                drwxr-xr-x  4 hbwhyte  staff  128 31 Jan 20:21 ..
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test1.txt
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test2.txt
+                -rw-r--r--  1 hbwhyte  staff    0 31 Jan 20:22 test3.txt
      5. Inside of folder Terminal_testing, create a new folder
+            hbwhyte Terminal_testing $ mkdir Inner_folder
+
      6. Copy a file from Terminal_testing to the new folder
+            hbwhyte Terminal_testing $ cp test1.txt Inner_folder/test1.txt
+
      7. Move a different file from Terminal testing to the new folder
+            hbwhyte Terminal_testing $ mv test2.txt Inner_folder/test2.txt
+
      8. Demonstrate removing:
          a. A file
+                hbwhyte Inner_folder $ rm test2.txt
+                hbwhyte Inner_folder $ ls
+                test1.txt
+
+
          b. A folder
+                hbwhyte Inner_folder $ cd ..
+                hbwhyte Terminal_testing $ rm -r Inner_folder
+                hbwhyte Terminal_testing $ ls
+                test1.txt	test3.txt
+
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+                hbwhyte Terminal_testing $ atom test1.txt
          b. Use $ cat print contents of file
+                hbwhyte Terminal_testing $ cat test1.txt
+                Here is some text.
+
+                I'm going to later look for the word "bird" because the bird is the word.
+
          c. Use $ grep to search for a word inside file
+                hbwhyte Terminal_testing $ grep "bird" test1.txt
+                I'm going to later look for the word "bird" because the bird is the word.
 
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd

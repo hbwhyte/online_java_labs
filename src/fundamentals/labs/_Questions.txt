@@ -2,16 +2,27 @@ Answer the following questions:
 
 1.) Using the command line, how do you:
     a. change directories?
+          cd
     b. list the contents of a folder?
+          ls, or ls -al
     c. print the path of the current directory?
+          pwd (print working directory)
     d. move a file from one location to the another?
+          mv [file name] [new directory path]
     e. copy a file from one location to another?
+          cp [file name] [directory]
     f. create a file?
+          touch [file name]
     g. create a folder?
+          mkdir [name]
     h. delete a file?
+          rm [file]
     i. delete a folder?
+          rm -r [directory]
     j. print the contents of a file?
+          cat [file]
     k. edit the contents of a file?
+          atom [file] (or vim I think)
 
 2.) Why do we use git and Github?
 
@@ -32,6 +43,7 @@ Answer the following questions:
 10.) What are lines of code indented? When should a line be indented?
 
 11.) What does a .java file need to be complied to a .class file before running?
+       JVM
 
 
 
