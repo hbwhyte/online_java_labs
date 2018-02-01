@@ -58,7 +58,7 @@ Fundamentals Exercise 1: CLI
 
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
-                hbwhyte Terminal_testing $ atom test1.txt
+                hbwhyte Terminal_testing $ vim test1.txt
          b. Use $ cat print contents of file
                 hbwhyte Terminal_testing $ cat test1.txt
                 Here is some text.
