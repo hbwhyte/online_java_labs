@@ -22,28 +22,46 @@ Answer the following questions:
     j. print the contents of a file?
           cat [file]
     k. edit the contents of a file?
-          atom [file] (or vim I think)
+          vim [file] (or you can use GUIs like atom sublime etc if you install them)
 
 2.) Why do we use git and Github?
+    To have a system that allows us to save previous versions, revert back to them,
+    create branches to work on new features, and make collaborating easier.
 
 3.) What is the general flow of git?
+    1 - Create repo (init, clone)
+    2 - Make changes to file(s)
+    3 - git add <filename>
+    4 - git commit -m "message"
+    5 - git push
 
 4.) What is the purpose of adding a remote to a local git repository?
+    To be able to connect with something like Github, to store the git repo externally.
+    This makes it easier to collaborate, and save your work in case something happens
+    to your computer
 
 5.) How do you print a message to the console?
+    System.out.println(""); (you can type sout for short)
 
 6.) Where does a program begin its execution?
+    The main() method
 
 7.) What is a code block and how do you create one?
+    A section of code that is created by two curly brackets { }
 
 8.) What is the idea of variable scope?
+    That each variable is impacted only by the parameters of it's own scope, and also only exists within
+    that scope. Generally defined by the closest curly brackets.
 
 9.) What are semicolons used for?
+    To demarcate the end of a statement (Java is white space independent)
 
-10.) What are lines of code indented? When should a line be indented?
+10.) Why are lines of code indented? When should a line be indented?
+     Lines of code are indented for user-friendliness and readability. Best practices recommend indenting
+     one level after every open curly bracket, and back one level for every closed curly bracket
 
 11.) What does a .java file need to be complied to a .class file before running?
-       JVM
+      A JVM
 
 
 
