@@ -23,7 +23,14 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int cat = 10;
+        double wideCat = cat;
+        System.out.println(wideCat);
+
+        double dog = 10.5;
+        int narrowDog = (int) dog;
+        System.out.println(narrowDog);
+
 
     }
 }
