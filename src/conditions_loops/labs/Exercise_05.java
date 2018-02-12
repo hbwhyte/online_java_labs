@@ -20,7 +20,23 @@ import java.util.Scanner;
 public class Exercise_05 {
 
     public static void main(String[] args) {
-        Scanner scanner = Scanner(System.in);
-        System.out.println("");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter an upper bound:");
+        int upper = scanner.nextInt();
+        System.out.println("Enter a lower bound");
+        int lower = scanner.nextInt();
+
+        // Calculate the sum
+        int sum = 0;
+        for (int i = lower; i <= upper; i++ ) {
+            sum = sum + i;
+        }
+
+        // Calculate the average - cast to Float
+        float average = (float) (upper + lower) / 2;
+
+        // Print the results
+        System.out.println("Their sum is " + sum);
+        System.out.println("Their average is " + average);
     }
 }

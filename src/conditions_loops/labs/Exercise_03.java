@@ -1,7 +1,5 @@
 package conditions_loops.labs;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 import java.util.Scanner;
 
 /**
@@ -15,7 +13,7 @@ import java.util.Scanner;
 public class Exercise_03 {
 
     public static void main(String[] args)  {
-        /* Scanner scanner = Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number from 1 to 12 inclusive: ");
         int month = scanner.nextInt();
 
@@ -26,7 +24,8 @@ public class Exercise_03 {
                 break;
             default:
                 System.out.println("Other");
-        } */
+        }
+
     }
 
 }

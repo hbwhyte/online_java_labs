@@ -8,4 +8,12 @@ package conditions_loops.labs;
  */
 
 public class Exercise_08 {
+    public static void main(String[] args) {
+        int number = 1000;
+        do {
+            System.out.println("Count is at " + number);
+            number -= 3;
+        } while (number > 0);
+
+    }
 }
