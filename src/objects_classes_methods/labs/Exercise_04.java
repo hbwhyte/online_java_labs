@@ -7,4 +7,41 @@ package objects_classes_methods.labs;
  *
  */
 
+class overload {
+
+    public static printThing() {
+        System.out.println();
+    }
+
+    public static printThing(int x) {
+        System.out.println(x);
+    }
+
+    public static printThing(char x) {
+        System.out.println(x);
+    }
+
+    public static printThing(double x) {
+        System.out.println(x);
+    }
+
+    public static printThing(String x) {
+        System.out.println(x);
+    }
+
+}
+
+class overloadTest {
+    public static void main(String[] args) {
+        overload obj = new overload();
+
+       /* Not working, not sure why
+        obj.printThing(1);
+        obj.printThing("string");
+        obj.printThing('c');
+        obj.printThing(134.2232);*/
+
+    }
+
+}
 

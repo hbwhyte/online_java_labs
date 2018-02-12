@@ -11,4 +11,30 @@ package objects_classes_methods.labs;
  *      4) A non-static method1 that calls another non-static method2 and passes a value to method2.
  */
 
+class Exercise_02 {
 
+    public static void main(String[] args) {
+        // Static Calling Static
+        Static2();
+        // Static Calling Non Static
+        Exercise_02 obj = new Exercise_02();
+        obj.nonStatic1();
+    }
+
+    public static void Static2() {
+        System.out.println("This is static2");
+    }
+
+    public void nonStatic1() {
+        System.out.println("This is nonStatic1");
+        // non static calling non static, and passing values to method 2
+        nonStatic2(2,4);
+        //I DON'T KNOW HOW TO DO #3
+
+    }
+
+    public int nonStatic2(int a, int b) {
+        int sum = (a + b);
+        return sum;
+    }
+}

@@ -12,4 +12,26 @@ package objects_classes_methods.labs;
  *
  */
 
+// INCOMPLETE
+class class1 {
+
+    public static void main(String[] args) {
+
+        class1 obj1 = new class1();
+        class2 obj2 = new class2();
+        class3 obj3 = new class3();
+
+
+    }
+
+
+}
+
+class class2 {
+
+}
+
+class class3 {
+
+}
 

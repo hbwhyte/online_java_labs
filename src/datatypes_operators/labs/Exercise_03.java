@@ -1,5 +1,9 @@
 package datatypes_operators.labs;
 
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
+import java.util.Scanner;
+
 /**
  * Data Types and Operators Exercise 3: Pig latin
  *
@@ -13,9 +17,23 @@ package datatypes_operators.labs;
 
 public class Exercise_03 {
 
-    public static void main(String[] args) {
 
-        // write code here
+    // INCOMPLETE. NEED TO COME BACK TO
+    // Don't understand how to rearrange a string
+    public static void main(String[] args) {
+        // Collect Name
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = scanner.next();
+
+        // Translate to Pig Latin
+        System.out.println(name.charAt(3));
+
+
+        // Print new name
+        System.out.println("Your name in pig latin is " + name);
+
+
 
     }
 }
