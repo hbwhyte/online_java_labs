@@ -6,7 +6,7 @@ package objects_classes_methods.labs;
  *      Demonstrate method overloading with at least three overloaded methods.
  *
  */
-
+// Errors everywhere, does not run :(
 class overload {
 
     public static printThing() {
@@ -29,19 +29,18 @@ class overload {
         System.out.println(x);
     }
 
-}
+} */
 
 class overloadTest {
     public static void main(String[] args) {
         overload obj = new overload();
 
-       /* Not working, not sure why
+
         obj.printThing(1);
         obj.printThing("string");
         obj.printThing('c');
-        obj.printThing(134.2232);*/
+        obj.printThing(134.2232);
 
     }
-
 }
 

@@ -1,5 +1,7 @@
 package objects_classes_methods.labs;
 
+import java.math.BigDecimal;
+
 /**
  * Objects, Classes and Methods Exercise 1:
  *
@@ -21,38 +23,74 @@ class Bouquet {
     // Main Method
     public static void main(String[] args) {
         // Create 2 objects with the constructors of the 2nd and 3rd class
-        Flowers rose = new Flowers();
-        Flowers carnation = new Flowers();
+        Flower rose = new Flower(2.5F, "red",12);
+        Flower carnation = new Flower(1.2F,"pink",12);
         Ribbon satin = new Ribbon();
 
-        rose.price = 2.5F;
-        rose.amount = 12;
-        rose.color = "red";
-        float roseCost = (rose.price * rose.amount);
-
-        carnation.price = 1.20F;
-        carnation.amount = 12;
-        carnation.color = "pink";
-        float carnationCost = (carnation.price * carnation.amount);
+        float roseCost = (rose.getPrice() * rose.getAmount());
+        float carnationCost = (carnation.getPrice() * carnation.getAmount());
         //Why does it say it costs 12.400001? (worse with double)
         // how to define sig digits?
 
         satin.color = "white";
         satin.style = "bow";
 
-        System.out.println("A dozen " + rose.color + " roses cost " + roseCost + " dollars, and are tied with a "
+        System.out.println("A dozen " + rose.getColor() + " roses cost " + roseCost + " dollars, and are tied with a "
                 + satin.color + " " + satin.style);
-        System.out.println("A dozen " + carnation.color + " carnations cost " + carnationCost + " dollars, and are " +
+        System.out.println("A dozen " + carnation.getColor() + " carnations cost " + carnationCost + " dollars, and are " +
                 "tied with a " + satin.color + " " + satin.style);
+
+        System.out.println(rose.toString());
     }
 }
 
 // Second Class
-class Flowers {
+class Flower {
     // instance variables
-    float price;
-    String color;
-    int amount;
+    private float price;
+    private String color;
+    private int amount;
+
+    public Flower(float price, String color, int amount) {
+        this.price = price;
+        this.color = color;
+        this.amount = amount;
+    }
+
+    public Flower() {}
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "price=" + price +
+                ", color='" + color + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
 }
 
 // Third Class

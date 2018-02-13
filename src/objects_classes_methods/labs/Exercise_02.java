@@ -19,6 +19,7 @@ class Exercise_02 {
         // Static Calling Non Static
         Exercise_02 obj = new Exercise_02();
         obj.nonStatic1();
+        int x = obj.nonStatic2(3, 7);
     }
 
     public static void Static2() {
@@ -28,8 +29,9 @@ class Exercise_02 {
     public void nonStatic1() {
         System.out.println("This is nonStatic1");
         // non static calling non static, and passing values to method 2
-        nonStatic2(2,4);
+        int x  = nonStatic2(2,4);
         //I DON'T KNOW HOW TO DO #3
+        System.out.println(c);
 
     }
 
