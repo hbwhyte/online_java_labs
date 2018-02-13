@@ -30,16 +30,63 @@ Answer the following questions:
 14.) Can you cast and int to a String or a String to an int? Why or why not?
 
 15.) What is an array?
+    An array is a group or collection of variables of the same type, referred to by a common name. It is an ordered
+    indexed list.
 
 16.) What is the first index of an array?
+    Zero. Always zero.
 
 17.) Can you change the size of an array once it has been declared and initialized?
+    After it has been declared no, but you can set the length when you initialize it.
 
 18.) How do you print the 5th element in an array "exampleArray"?
+    System.out.println(exampleArray[4]);
 
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
+    DECLARING:
+        type[] array-name = new type[size];
+        int[] newArray = new int[4]; // A array of integers called "newArray" with a length of 10, indices 0-9
+
+    INITIALIZING:
+
+        // Method 1
+        int[] newArray = {1, 2, 3, 4}; // Array of 4 integers named "newArray" that has populated values [1, 2, 3, 4]
+
+        // Method 2 (after the array has already been declared)
+        newArray[0] = 1;
+        newArray[1] = 2;
+        newArray[2] = 3;
+        newArray[3] = 4;
+
+        //Multidimensional Array
+           int[][]
 
 20.) How do you iterate through a multidimensional array?
+        Need nested loop(s).
+
+        // Nested loop #1
+        This is to populate the array. The first (outer) loop runs while i < newArray.length.
+        The second (inner) loop needs to be in relation to newArray[i].length.
+
+        //Nested loop #2
+        This is to print the array. needs a System.out.print() as well as System.out.println() for formatting
 
 21.) What is the for-each loop used for?
 
+        For whenever you want to access every piece of data in a collection
+        Functionally equivalent, but a bit more concise and elegant.
+        However, doesn't have an index, so you can't use that if you need the index.
+        Also called "enhanced for loop".
+
+        // Example (1D)
+        for (int i : newArray) {   // For each int (temp calling i) in the array newArray, do ____________
+            System.out.println(i)
+        }
+
+        // Example (2D)
+        for (int [] arr : newArray) {
+            for (int i : arr) {
+                System.out.print(i + "\t| ")
+            }
+            System.out.println();
+        }
