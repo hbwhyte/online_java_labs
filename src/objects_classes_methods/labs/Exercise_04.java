@@ -7,40 +7,59 @@ package objects_classes_methods.labs;
  *
  */
 // Errors everywhere, does not run :(
-class overload {
+class Overload {
 
-    public static printThing() {
+    public static void printThing() {
         System.out.println();
     }
 
-    public static printThing(int x) {
+    public static void printThing(int x) {
         System.out.println(x);
     }
 
-    public static printThing(char x) {
+    public static void printThing(char x) {
         System.out.println(x);
     }
 
-    public static printThing(double x) {
+    public static void printThing(double x) {
         System.out.println(x);
     }
 
-    public static printThing(String x) {
+    public static void printThing(String x) {
         System.out.println(x);
     }
 
-} */
+}
 
-class overloadTest {
+class OverloadTest {
     public static void main(String[] args) {
-        overload obj = new overload();
 
+        Overload.printThing(10);
+        Overload.printThing(1);
+        Overload.printThing("string");
+        Overload.printThing('c');
+        Overload.printThing(134.2232);
 
-        obj.printThing(1);
-        obj.printThing("string");
-        obj.printThing('c');
-        obj.printThing(134.2232);
+        OverloadTest obj = new OverloadTest();
 
+        obj.test();
+
+        test3();
+
+    }
+
+    public void test() {
+        System.out.println("test");
+
+        test2();
+    }
+
+    public void test2() {
+        System.out.println("test2");
+    }
+
+    public static void test3() {
+        System.out.println("test3");
     }
 }
 

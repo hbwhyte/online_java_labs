@@ -31,7 +31,7 @@ class Exercise_02 {
         // non static calling non static, and passing values to method 2
         int x  = nonStatic2(2,4);
         //I DON'T KNOW HOW TO DO #3
-        System.out.println(c);
+        System.out.println(x);
 
     }
 

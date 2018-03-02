@@ -13,23 +13,23 @@ class Controller {
 
     public static void main(String[] args) {
 
-        Countries Canada = new Countries();
-        Canada.setCapitalCity("Ottawa");
-        Canada.setLanguage("English and French");
+        Countries canada = new Countries();
+        canada.setCapitalCity("Ottawa");
+        canada.setLanguage("English and French");
 
-        System.out.println("In " + Canada.getCapitalCity() + " they speak " + Canada.getLanguage());
+        System.out.println("In " + canada.getCapitalCity() + " they speak " + canada.getLanguage());
 
-        Countries Spain = new Countries();
-        Spain.setCapitalCity("Madrid");
-        Spain.setLanguage("Spanish");
+        Countries spain = new Countries();
+        spain.setCapitalCity("Madrid");
+        spain.setLanguage("Spanish");
 
-        System.out.println("In " + Spain.getCapitalCity() + " they speak " + Spain.getLanguage());
+        System.out.println("In " + spain.getCapitalCity() + " they speak " + spain.getLanguage());
 
-        Countries Germany = new Countries();
-        Germany.setCapitalCity("Berlin");
-        Germany.setLanguage("German");
+        Countries germany = new Countries();
+        germany.setCapitalCity("Berlin");
+        germany.setLanguage("German");
 
-        System.out.println("In " + Germany.getCapitalCity() + " they speak " + Germany.getLanguage());
+        System.out.println("In " + germany.getCapitalCity() + " they speak " + germany.getLanguage());
 
 
         System.out.println(Countries.numCountries);
