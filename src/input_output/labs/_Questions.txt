@@ -1,19 +1,38 @@
 Answer the following questions:
 
 1.) What is a byte stream?
+    A way to stream (read/write) data to or from a file byte by byte, or 8 bits at a time. Good for when you are
+    streaming data that is NOT in human language/characters, you can use byte streams.
 
 2.) What is a character stream?
+    A way to stream (read/write) data to or from a file character by character (16 bits) at a time. Because char
+    is in Unicode, this is useful when you want to process text files
 
 3.) What two classes are at the top of the the byte stream hierarchy?
+    InputStream and OutputStream
 
 4.) What two classes are at the top of the the character stream hierarchy?
+    Reader and Writer
 
 5.) List at least three byte stream classes.
+    FileInputStream and FileOutputStream
+    BufferedInputStream and BufferedOutputStream
+    ObjectInputStream and ObjectOutputStream
 
 6.) List at least three character stream classes.
+    BufferedReader, BufferedWriter
+    FileReader and FileWriter
+    StringReader and StringWriter
 
 7.) What is a try-with-resources?
+    A try statement that accesses object(s), aka resources, outside of the program, and makes sure to close
+    the connection at the end of the statement. Any object that implements java.lang.AutoCloseable or
+    java.io.Closeable can be used as a resource.
+
 
 8.) What makes the BufferedReader different from the BufferedInputStream?
+    BufferedReader is a character stream, BufferedInputStream is a byte stream.
 
 9.) When would you use the read() method vs. the readline() method?
+    Read() if you want each character, or if there isn't intrinsic value in separating line by line. readLine() is
+    great for csv, arrays,
