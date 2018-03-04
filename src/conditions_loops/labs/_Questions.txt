@@ -1,17 +1,34 @@
 Answer the following questions:
 
 1.) What is the if statement used for?
+    To let the program know which of various options it should do, based on conditions
 
 2.) What is good real life application of a switch statement?
+    When there are a finite number of options (e.g. days in a week, floors on an elevator, etc.)
 
 3.) What is the difference between a while loop and a do-while loop?
+    A do while loops evaluates the code at the bottom instead of the top, so it will run at least once. It does the
+    program the first time, then evaluates whether or not while is true.
 
 4.) What is the difference between a for loop and an enhanced for loop?
+    A for loop iterates over a range of values, while an enhanced for loop (also known as a for-each loop) is for
+     iterating over a collection such as an array. Instead of having the 3 sections of initialize, condition, and
+     iteration you use the following:
+
+     for(type iteration-variable : collection){  // executable code }
+     e.g.
+     for (String item: arr) { // code} // arr being a predefined array full of items
 
 5.) How do you create an infinite for loop?
+    By leaving out conditions that would break the for loop, such as not setting a condition for it to stop
 
 6.) What is the difference between the break statement and the continue statement?
+    Break statement exits out of the loop, either to just outside of the loop if it is unlabelled, or to the location
+    of the label if it has one. The continue statement stops the rest of the specific iteration from completing, but
+    doesn't exit the loop. It jumps straight to the next iteration.
 
 7.) Is there a limit to how many loops you can nest?
+    No, but be careful of Big O complexity.
 
 8.) Is there a limit to how many conditional statements you can nest?
+    No.
