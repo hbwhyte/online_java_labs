@@ -2,44 +2,108 @@ Answer the following questions:
 
 
 1.) What is an instance variable?
+    Variables declared outside of methods, that are part of the whole class. This means they can be called on by
+    multiple methods throughout the class. If they are private, they can be accessed only in that class, and if they
+    are public, they can be accessed in other classes too.
 
 2.) How do you create an object of a class Vehicle?
+    Vehicle obj = new Vehicle();
+
+    Or
+
+    Vehicle obj;
+    obj = new Vehicle();
 
 3.) What is a reference variable? How is it different from a primitive type?
+    A reference variable are used to refer to objects. They are variables that cannot be changed. They are different
+    from the primitive types in that they can be more complex, and aren't necessarily just a simple binary value.
 
 4.) What does it mean to pass by reference?
+    When an object is passed by reference, the new method does not receive a separate copy of the object. It receives
+    a REFERENCE to the location of where the initial reference variable/object was created.
 
 5.) What makes up a method signature?
+    The general form for a method signature is:
+    access-modifier return-type method-name(param a, param b, ...){ //code }
+
+    access-modifer = defines the access level. {public, private, protected, default | static or not(leave blank)}
+    return-type = does the method return data back from where it was called or not? {void or primitive type - e.g. int}
+    method-name = name of the method, in camelCase
+    params = also known as arguments. Params are optional, but useful for passing in either values or reference
+    variables
 
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+    static double divide(int a, int b); { }
 
 7.) When does a method stop executing? How can you make it terminate?
+    A method stops executing when:
+        - it returns data back (and is not void)
+        - it has completely run through the code
+        - it hits "break"
 
 8.) How do you return a String from a method?
+    static String methodName() { }
 
 9.) What is the return type of a method that does not returns any value?
+    void
 
 10.) When should a method be static?
+     When you don't want/need to create an object of the containing class in that method. E.g. the Math methods
 
 11.) What is an example of a time you would make an instance variable static? final?
+     You would make an instance variable static if it would be universal to all the other methods or objects in the
+     class, like a count. A final variable is useful when you have a constant, such as array size, that will be
+     used in multiple places.
 
 12.) When a method returns a value, what needs to be done with that value?
+     That value gets returned to the location of the method call.
 
 13.) What is method overloading?
+     Method overloading is when you write the same method (of the same name) multiple times but allowing different
+     parameters to be called into it. Either different parameter TYPES or different NUMBER of parameters This is one
+     of the ways Java exhibits polymorphism.
 
 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+     static double divide(int a, int b) { }
+     static double divide(double a, double b) { }
+     static double divide(float a, float b) { }
 
 14.) What are constructors used for?
+     Constructors are used for initializing objects (setting their initial values)
 
 15.) If a class does not have a constructor, how does Java handle the creation of an object
+     Java automatically creates default constructors that initializes default values for all member variables, which
+     is 0 for numbers, false for boolean, and null for reference types.
 
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
+     class Vehicle {
+        String make;
+        String model;
+
+        public Vehicle(String make, String model) {
+            this.make;
+            this.model;
+        }
+     }
+
 
 17.) What is the "this" keyword used for?
+     "this" refers to members of a class that share the same name. So if there are instance variables with the same
+     name as parameters of a constructor or method, it will reference the instance variables and set them equal to
+     the input parameters.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
+     This is to define the scope of the class/method/variable, and which other classes/methods/variables can access
+     them.
+
+     Public is all, private is just that class, and protected is just that package.
 
 19.) What is constructor overloading?
+     When you create multiple constructors of the same name in the same class with either different number of parameters
+     or different parameter types.
 
 20.) Demonstrate constructor overloading with three overloaded constructors.
+     public Vehicle(String make, String model) {}
+     public Vehicle(String make, String model, int year) {}
+     public Vehicle() {}
 
