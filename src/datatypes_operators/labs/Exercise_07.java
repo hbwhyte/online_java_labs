@@ -9,4 +9,19 @@ package datatypes_operators.labs;
  */
 
 public class Exercise_07 {
+    public static void main(String[] args) {
+        int[][] irregularArr = {
+                {0},
+                {1, 2, 3, 5, 7},
+                {4, 6, 8, 9},
+        };
+
+        for (int[] arr1 : irregularArr) {
+            for (int item : arr1) {
+                System.out.print(item + " ");
+            }
+            System.out.println();
+
+        }
+    }
 }

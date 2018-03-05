@@ -2,32 +2,73 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+    boolean - for true false (1 bit)
+
+    byte - twos complement integer (8 bit)
+    short - 8-bit type for unicode characters
+    char - 16-bit type for ASCII characters - it's possible to use incrementing on char
+    int - for whole numbers + zero (32 bit)
+    long - whole number that requires more space (64 bit)
+
+    float - floating point number with 6-7 digits of precision (32 bits)
+    double - larger floating point number with 15-16 digits of precision (64 bits)
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+    int x = 42;
 
 3.) What happens if you initialize a double variable with the value of a int?
+    You take up more space then you need and it adds a floating point (e.g. int 42 becomes double 42.0)
 
 4.) How do you set an int variable to the value of a double?
+    double x = 42;
+
+    Because double is larger than int, it automatically converts properly, no need to cast
 
 5.) What are the 5 arithmetic operators?
+    Addition, subtraction, multiplication, division, and modulus (%)
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
+    To compare two number values. It results in a boolean value of true or false.
 
 7.) Demonstrate the use of a Relational operator.
+    int i = 10;
+    int j = 20;
+    (i < j) // True
+    (i > j) // False
+    (i == j) // False
+    (i != j) / True
 
 8.) What logical operators used for? What is the result of using a logical operator?
+    Logical operators are used for evaluating booleans. The results is a boolean of true or false.
 
 9.) Demonstrate the use of a logical operator.
+    int i = 10;
+    int j = 20;
+    if ((i != j) && (i > j)) { // This code will NOT run because != is true, but > is false, and && means AND}
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
+     x += 10;
 
 11.) What data type is a String?
+    It is an object type, not a primitive type
 
 12.) Are string mutable?
+     No, Strings are immutable, meaning you cannot change them after they have been created. However, you can operate
+     on them, such as String.length, String.equals("string"), or String.indexOf("r"), for examples.
 
 13.) How do you concatenate Strings?
+    Concatenate, means put together.
 
-14.) Can you cast and int to a String or a String to an int? Why or why not?
+    E.g.
+    String string1 = "first part"
+    String string2 = "second part"
+    String concatenate = System.out.println(string1 + string2);
+
+    //Output: first partsecond part
+
+14.) Can you cast an int to a String or a String to an int? Why or why not?
+    You can cast an int to a String easily because it is less complex, but to make a string an int you need to either
+    use Integer.parseInt() or Integer.valueOf()
 
 15.) What is an array?
     An array is a group or collection of variables of the same type, referred to by a common name. It is an ordered
@@ -45,7 +86,7 @@ Answer the following questions:
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
     DECLARING:
         type[] array-name = new type[size];
-        int[] newArray = new int[4]; // A array of integers called "newArray" with a length of 10, indices 0-9
+        int[] newArray = new int[4]; // A array of integers called "newArray" with a length of 4, indices 0-3
 
     INITIALIZING:
 

@@ -10,6 +10,24 @@ package datatypes_operators.labs;
  *
  */
 
+import java.util.Scanner;
+
 public class Exercise_04{
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] arr = new int[10];
+        int sum = 0;
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Please enter a number");
+            arr[i] = scanner.nextInt();
+            sum += arr[i];
+        }
+
+        int average = sum / arr.length;
+
+        System.out.println("The sum is " + sum + " and the average is " + average);
+    }
 
 }
