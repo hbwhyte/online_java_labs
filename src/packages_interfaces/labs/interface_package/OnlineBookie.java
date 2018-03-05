@@ -1,4 +1,4 @@
-package packages_interfaces.labs;
+package packages_interfaces.labs.interface_package;
 
 /**
  * Interfaces Exercise 1:
@@ -16,6 +16,8 @@ package packages_interfaces.labs;
  *       - A PersonalDevice interface that is extended by a iPad class and a Computer class. Two of the methods could be
  *          playMusic() and turnOff().
  */
+
+
 
 public interface OnlineBookie {
     String selectSport(String sport);
