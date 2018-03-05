@@ -1,20 +1,41 @@
 Answer the following questions:
 
 1.) What is inheritance?
+    Inheritance is a way that Java allows a subclass to inherit / extend / add all of the methods and fields of a
+    parent class (or super class).
 
 2.) Why do we use inheritance?
+    This allows code to be reused in multiple places and ways without creating compatibility issues, ans can save time
+    rather than re-writing code over and over. It also can improve maintainability.
 
 3.) Provide a real world example where you think inheritance would be implemented.
+    When you are creating eCommerce shopping widgets for multiple different brands. You want the same core
+    functionality to remain, but the CSS, products, wording and/or language needs to be unique to each brand.
 
 4.) How does a class inherit another class?
 
+    class ChildClass extends ParentClass { }
+
+    Means that ChildClass inherits the variables and methods of the parent class as if they were their own.
+
 5.) How many levels can a hierarchy extend?
+    There is no limit, as long as it still makes sense to add levels, and the complexity doesn't bog down the program
 
 6.) What is the "super" keyword used for?
+    The "super" keyword is just like the "this" keyword, but instead of referring to the current class, it refers to
+    the parent or "super" class
 
 7.) When a subclass object is created, in what order do the constructors execute?
+    Always call the parent constructor first, then the child constructors.
 
 8.) What is method overwriting?
+    *** Is overwriting == overriding?? If so... ***
+
+    Method overriding is using @Override to use the child variables/methods over the parent behaviour.
+
 
 9.) How can method overwriting be beneficial?
+    When you want to extend / inherit most of a parent class, but perhaps there are a few difference you want to
+    specify. For instance, penguins would be a subclass of birds, but since they don't fly that would be one function
+    you would need to override.
 

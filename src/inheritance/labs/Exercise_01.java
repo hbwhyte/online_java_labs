@@ -1,12 +1,15 @@
 package inheritance.labs;
 
+
 /**
  * Inheritance Exercise 1:
  *
  *      1) Create one super class Class1 and two subclasses Class2 and Class3.
  *          -Class2 should extend Class1.
  *          -Class3 should extend Class2.
+ *          Done.
  *      2) Each class should have at least two instance variable, all private.
+ *          Done.
  *      3) Create getters and setters for all instance variables and demonstrate setting superclass
  *          variables from a subclass
  *      4) Demonstrate the use of (non getter and setter) methods in a superclass from a subclass.
@@ -23,4 +26,8 @@ package inheritance.labs;
  *
  *
  */
+
+
+
+
 
