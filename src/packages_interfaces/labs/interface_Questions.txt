@@ -1,16 +1,33 @@
 Answer the following questions:
 
 1.) What is an interface?
+    An interface is like a contract that states what methods you need to include anywhere you implement it
 
 2.) Why are interfaces implemented?
+    So that developers can create multiple related classes that follow the same rules and constructs, and you can
+    trust that they will work together and have the requirements.
 
 3.) What is the implement keyword used for?
+    It states that the class is following (or IMPLEMENTING) the named interface, and the first thing it will do is
+    define and override the required methods outlined in the interface.
 
 4.) How many interfaces can class implement?
+    Unlimited
 
 5.) Write a simple interface with one method.
+    public interface Laptop {
+        void screenSize(int s);
+     }
+
+    class MacBook implements Laptop {
+         void screenSize (int s) {
+            this.screenSize = 13
+         }
+    }
 
 6.) Think of a real world application where interfaces are used. Describe it's purpose.
+    I assume that any developer for the App Store needs to implement an interface to ensure that their independent
+    application has the required methods to properly run on iOS.
 
 7.) What is wrong with the following interface?
 
@@ -19,3 +36,10 @@ Answer the following questions:
             return x + y;
         }
     }
+
+    The method sum is not abstract - it should read this:
+
+    public interface CorrectInterface{
+            int sum(int x, int y);
+        }
+
