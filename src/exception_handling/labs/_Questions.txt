@@ -1,24 +1,44 @@
 Answer the following questions:
 
 1.) What is exception handling?
+    Exception handling is a way to deal with inevitable errors ina graceful way.
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+    The exception hierarchy has the class Throwable as to top parent class. That breaks down into the Exception class
+    which is for program/user errors, and the Error class, which is for machine errors.
 
 3.) What is a try/catch?
+    It is a combination of try{} which is a block of code, the main part of the program, and catch{} which if the
+    try{} block throws and exception, it tries to handle it in a graceful way.
 
 4.) What exceptions have you come across thus far?
+    ArrayIndexOutOfBoundsException
+    NumberFormatException - tried using a string as a number
 
 5.) How many catch statement can you have following a try?
+    You can use multiple, no real limit
 
 6.) How many try statements can you have preceding a catch?
+    Just one, but you can nest a try statement in a catch.
 
 7.) What does the finally statement do in a try/catch/finally block?
+    The finally statement is the last line of defence in the block, if the try/catch isn't able to resolve the issue.
+    This allows you to gracefully close the connection instead of harshly crashing.
 
 8.) Can you nest exceptions? If so, when would you nest an exception?
+    Yes, you can nest exceptions. You could do that for example if instead of throwing a generic error message, you
+    want to try something else, or ask the user for new input.
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
+    ArrayIndexOutOfBounds exception (the subclass) first. This is because when you catch an Exception exception, it
+    will catch all of the subclasses as well, but it won't provide you the same level of detail of what the error is.
 
-10.) How do you rethrow and exception? Why would you rethrow an exception?
+10.) How do you rethrow an exception? Why would you rethrow an exception?
+     You can re-throw an exception by manually throwing the exception using the word "throw",
+     e.g. "throw exceptionObject;". There needs to be an object created to do this. This could be useful if you want
+     it to be handled by the outer try/catch, not inside the nested one.
 
 11.) What is the purpose of the throws keyword?
+     For dealing with an exemption it does not handle - e.g. if the error would be an ArithmeticException, you don't
+     need to create your own catch for that. You use the "throws" keyword directly in the method signature.

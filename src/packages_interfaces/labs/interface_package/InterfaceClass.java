@@ -15,5 +15,5 @@ public class InterfaceClass {
     protected static void favouriteColour() {
         System.out.println("My favourite color is green.");
     }
-    
+
 }
